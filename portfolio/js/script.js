@@ -4,7 +4,7 @@
 $(document).ready(function() {
     $('#slides').superslides( {
         animation: "fade", 
-        play: 2000 // in mill seconds
+        play: 5000 // in mill seconds
         
     });
 });

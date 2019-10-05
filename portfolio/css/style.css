@@ -1,0 +1,23 @@
+
+/* . use ID tag and call both .prev and .next */
+.slides-navigation .prev, 
+.slides-navigation .next{
+    width: 47px;
+    height: 47px; 
+    background-size: cover; 
+    background-repeat: no-repeat;
+    
+}
+
+/* a give the class a higher presedent*/
+.slides-navigation a.prev{
+    left: 20px;
+    background-image: url(../img/icons/prev1.png)
+    /* we are use .. because currently we are in the image folder and 
+we are telling the computer .. to go back one folder*/
+}
+
+.slides-navigation a.next{
+    right: 20px; 
+    background-image: url(../img/icons/next1.png)
+}
