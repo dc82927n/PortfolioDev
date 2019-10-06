@@ -69,6 +69,17 @@ we are telling the computer .. to go back one folder*/
 }
 
 
+.section {
+    padding: 100px 0;
+    /*  it's the same saying 100px 0 100px 0 basically 
+    it's saying 100px top and bottom and 0px left and right */
+}
+
+.aboutImage {
+    max-width: 100%;
+}
+
+
 
 
 

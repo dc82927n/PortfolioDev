@@ -11,7 +11,7 @@ $(document).ready(function() {
     /* this is JS  */
 
     var typed = new Typed(".typed", {
-            strings: ["Software Engineer.", "Web Developer.", "Fullstack Developer.", "Software Engineer."],
+        strings: ["Software Engineer.", "Web Developer.", "Fullstack Developer.", "Software Engineer.", "Google Adword Certified.", "Google Analytics Certified.", "S.E.O. Ninja."],
             typeSpeed: 70, 
             loop: true, 
             startDelay: 1000,
