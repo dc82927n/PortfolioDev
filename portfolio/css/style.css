@@ -68,17 +68,23 @@ we are telling the computer .. to go back one folder*/
     
 }
 
-
+/* about me section div*/
 .section {
     padding: 100px 0;
     /*  it's the same saying 100px 0 100px 0 basically 
     it's saying 100px top and bottom and 0px left and right */
 }
 
+/*  about me image*/
 .aboutImage {
     max-width: 100%;
+    /* height: 450px; */
+   /*  object-fit: cover;  */
 }
 
+.myName {
+    padding: 10px 0; 
+}
 
 
 
