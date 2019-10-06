@@ -1,4 +1,17 @@
 
+/* default style for the body */
+
+body {
+    font-size: 2rem; 
+    font-size: 14px; 
+    color: #333; 
+    background-color: #fff;
+    letter-spacing: 1px; 
+
+}
+
+
+
 /* putting an overlay of a darker color so the prev and next may pop if it's white but
 i keep the overlay white so it looks even brighter instead.*/
 .overlay{
@@ -19,6 +32,7 @@ i keep the overlay white so it looks even brighter instead.*/
     
 }
 
+/* superslider navigation */
 .slides-navigation {
      z-index: 6
 }
@@ -82,9 +96,26 @@ we are telling the computer .. to go back one folder*/
    /*  object-fit: cover;  */
 }
 
+/* myName div */
 .myName {
     padding: 10px 0; 
 }
+
+
+.skillsSection {
+    background-color: white;
+    color: black
+}
+
+body {
+    font-size: 2rem; 
+    font-size: 14px; 
+    color: #333; 
+    background-color: #fff;
+    letter-spacing: 1px; 
+
+}
+
 
 
 
