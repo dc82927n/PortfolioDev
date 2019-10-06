@@ -8,7 +8,7 @@ $(document).ready(function() {
         
     });
 
-    /* this is JS  */
+    /* this is for the letter to be typed out with JS reference  */
 
     var typed = new Typed(".typed", {
         strings: ["Software Engineer.", "Web Developer.", "Fullstack Developer.", "Software Engineer.", "Google Adword Certified.", "Google Analytics Certified.", "S.E.O. MasterMind."],
@@ -18,13 +18,15 @@ $(document).ready(function() {
             showCursor: false
     });
 
+
+    /* automated carousel using jQuery */
     var owl = $('.owl-carousel');
     owl.owlCarousel({
         items: 4,
         loop: true,
         margin: 10,
         autoplay: true,
-        autoplayTimeout: 2000,
+        autoplayTimeout: 1500,
         autoplayHoverPause: true
     });
     $('.play').on('click', function () {
@@ -33,5 +35,10 @@ $(document).ready(function() {
     $('.stop').on('click', function () {
         owl.trigger('stop.owl.autoplay')
     })
+
+    $('.chart').easyPieChart({
+        //your options goes here
+    });
+
 
 });
