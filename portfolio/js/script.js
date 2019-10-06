@@ -26,7 +26,7 @@ $(document).ready(function() {
         loop: true,
         margin: 10,
         autoplay: true,
-        autoplayTimeout: 1500,
+        autoplayTimeout: 2000,
         autoplayHoverPause: true
     });
     $('.play').on('click', function () {
@@ -36,8 +36,17 @@ $(document).ready(function() {
         owl.trigger('stop.owl.autoplay')
     })
 
+        /* jQuery easyPieChart controls */
     $('.chart').easyPieChart({
-        //your options goes here
+     easing: 'easeInOut',
+     barColor: 'red',
+     trackColor: '#F5F5DC', 
+     scaleColor: 'black',
+     lineWidth: 5, 
+     size: 152,
+     onStep: function(from, to, percent){
+         $(this.el).find('.percent').text(Math.round(percent)); 
+     }
     });
 
 
