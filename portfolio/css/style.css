@@ -52,17 +52,30 @@ we are telling the computer .. to go back one folder*/
 
 .titleMessage .heading p{
     color: white; 
-    text-shadow: 0px 2px 5px rgba(0, 0, 0, 0.4);
-    font-weight: 100; 
+    text-shadow: 5px 2px 5px rgba(0, 0, 0, 0.4);
+    font-weight: 100; /* thickness of the lettering */
     letter-spacing: 7px
 }
 
 .titleMessage .heading .main {
     font-size: 50px;
+    
 }
 
 
 .titleMessage .heading .sub {
     font-size: 26px;
+    
 }
+
+
+
+
+
+
+
+
+
+
+
 
