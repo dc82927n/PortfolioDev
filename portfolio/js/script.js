@@ -24,11 +24,11 @@ $(document).ready(function() {
     owl.owlCarousel({
         items: 4,
         loop: true,
-        margin: 40, 
+        /* margin: 40,  */
         autoplay: true,
-        autoplayTimeout: 2000,
+        autoplayTimeout: 2500,
         autoplayHoverPause: true,
-       /*  responsiveClass:true, */
+        responsiveClass:true, 
         responsive: {
             0:{
                 items:1
