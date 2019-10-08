@@ -24,11 +24,11 @@ $(document).ready(function() {
     owl.owlCarousel({
         items: 4,
         loop: true,
-        margin: 40, 
+        /* margin: 40,  */
         autoplay: true,
-        autoplayTimeout: 5000,
-        /* autoplayHoverPause: true, */
-        /* responsiveClass:true,  */
+        autoplayTimeout: 2500,
+        autoplayHoverPause: true,
+        responsiveClass:true, 
         responsive: {
             0:{
                 items:1
@@ -39,7 +39,9 @@ $(document).ready(function() {
             768:{
                 items:3
             },
-            
+            938: {
+                items:4
+            }
 
         }
 

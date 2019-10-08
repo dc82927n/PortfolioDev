@@ -125,13 +125,13 @@ we are telling the computer .. to go back one folder*/
 
 .chart .percent:after{
     content: '%'
+
 }
 
 .chart canvas{
     position: absolute;
     left: 0; 
     top: 0; 
-    z-index:7
 
 }
 
