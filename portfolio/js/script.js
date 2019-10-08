@@ -54,18 +54,58 @@ $(document).ready(function() {
         owl.trigger('stop.owl.autoplay')
     })
 
-        /* jQuery easyPieChart controls */
-    $('.chart').easyPieChart({
-     easing: 'easeInOut',
-     barColor: 'red',
-     trackColor: '#F5F5DC', 
-     scaleColor: 'black',
-     lineWidth: 5, 
-     size: 152,
-     onStep: function(from, to, percent){
-         $(this.el).find('.percent').text(Math.round(percent)); 
-     }
-    });
+   
+
+    var skillsTopOffset = $(".skillsSection").offset().top;
+ /*    console.log(skillsTopOffset);  this will tell use where the skill section 
+    is located from the top down. for this it's example it's 1594px down 
+ */
+    $(window).scroll(function(){
+
+        if(window.pageYOffset > skillsTopOffset - $(window).height() + 200) {
+
+            /* jQuery easyPieChart controls */
+            $('.chart').easyPieChart({
+                easing: 'easeInOut',
+                barColor: 'red',
+                trackColor: '#F5F5DC',
+                scaleColor: 'black',
+                lineWidth: 5,
+                size: 152,
+                onStep: function (from, to, percent) {
+                    $(this.el).find('.percent').text(Math.round(percent));
+                }
+            });
+
+        
+        }
+
+    }); 
 
 
 });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
