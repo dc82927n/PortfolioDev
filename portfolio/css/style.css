@@ -144,9 +144,61 @@ display: inline-block;
 text-align: center
 
 }
-
-
 /* here and above is pie chart and carousel css */
+
+
+/* css for stats section below*/
+.squareItem{
+   margin-top: 30px;
+   position: relative;
+}
+
+.squareInnerContainer {
+    position: relative;
+    padding: 50px 15px 35px;
+    text-align: center;
+    border: 2px solid black;
+    border-top: none; 
+}
+
+.squareInnerContainer:before, 
+.squareInnerContainer:after{
+    content: '';
+    position: absolute; 
+    top: 0px; 
+    width: 30%; 
+    border-bottom: 2px solid black;
+}
+
+.squareInnerContainer:before{
+    right: 0px;
+
+}
+
+.squareInnerContainer:after{
+    left: 0px;
+}
+
+.squareContent h2{
+    font-size: 56px; 
+    margin-bottom: 10px;
+    font-weight: 400; 
+    color: black;
+}
+
+.squareContent h3{
+     font-size: 56px; 
+    margin-bottom: 10px;
+    font-weight: 59; 
+    color: black;
+}
+
+
+/* css for stats section above*/
+
+
+
+
 
 
 
