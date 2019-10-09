@@ -193,7 +193,14 @@ text-align: center
     color: black;
 }
 
-
+.squareIcon {
+position: absolute;
+    left: 30%;
+    width: 40%;
+    height: 60px;
+    font-size: 65px;
+    top: -25%;
+}
 /* css for stats section above*/
 
 
