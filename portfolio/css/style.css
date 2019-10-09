@@ -124,6 +124,7 @@ we are telling the computer .. to go back one folder*/
   font-size: 35px
 }
 
+/* adding % icon next to percent variable */
 .chart .percent:after{
     content: '%'
 
@@ -153,6 +154,7 @@ text-align: center
    position: relative;
 }
 
+/* drawing the left,right,bottom fames for the stats */
 .squareInnerContainer {
     position: relative;
     padding: 50px 15px 35px;
@@ -161,6 +163,7 @@ text-align: center
     border-top: none; 
 }
 
+/* drawing the top portion of the line manually */
 .squareInnerContainer:before, 
 .squareInnerContainer:after{
     content: '';
@@ -170,6 +173,7 @@ text-align: center
     border-bottom: 2px solid black;
 }
 
+ 
 .squareInnerContainer:before{
     right: 0px;
 
@@ -193,6 +197,7 @@ text-align: center
     color: black;
 }
 
+/* position the front awesome icon */
 .squareIcon {
 position: absolute;
     left: 30%;

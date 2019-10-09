@@ -82,6 +82,8 @@ $(document).ready(function() {
 
     }); 
 
+    /* counterUp */   
+    $(".counter").countup(200); 
 
 });
 
