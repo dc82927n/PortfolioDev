@@ -82,11 +82,57 @@ $(document).ready(function() {
 
     }); 
 
-    /* counterUp */   
-    $(".counter").countup(200); 
+    //counterUp  
+/*    $(".counter").countup(2000) */
+
+  
+
+ 
+/*     $(".counter").countup(2000, {
+         useEasing: false,
+        useGrouping: false, 
+        separator: "",
+ 
+    });  
+ */
+/* 
+    $(".counter").countup('counter', {
+        
+            useEasing: false,
+            useGrouping: false, 
+            separator: "",
+        
+        }),
+    
+ 
+ */
+ /* created a loop that will increment all
+  the counter class on html */
+/*     $(".counter").each(function() {
+     
+        var element = $(this);
+        var endVal = parseInt(element.text()); 
+        element.countup(endVal); 
+        useEasing: false;
+        useGrouping: false;
+      
+    });
+ */
+
+/* 
+    const options = {
+        separator: '',
+    };
+ 
+*/
+    /* $(".counter").countup(2000 {
+         useEasing: false,
+         useGrouping: false
+    });  */
+
+    $(".counter").counterUp({ delay: 10, time: 1000 });
 
 });
-
 
 
 
