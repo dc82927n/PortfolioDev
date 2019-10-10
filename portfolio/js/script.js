@@ -82,57 +82,29 @@ $(document).ready(function() {
 
     }); 
 
-    //counterUp  
-/*    $(".counter").countup(2000) */
-
-  
-
- 
-/*     $(".counter").countup(2000, {
-         useEasing: false,
-        useGrouping: false, 
-        separator: "",
- 
-    });  
- */
+    /* counterUp */   
+/*     $(".counter").countup(200);  */
 /* 
-    $(".counter").countup('counter', {
-        
-            useEasing: false,
-            useGrouping: false, 
-            separator: "",
-        
-        }),
-    
- 
- */
- /* created a loop that will increment all
-  the counter class on html */
-/*     $(".counter").each(function() {
-     
-        var element = $(this);
-        var endVal = parseInt(element.text()); 
-        element.countup(endVal); 
-        useEasing: false;
-        useGrouping: false;
-      
-    });
- */
-
-/* 
-    const options = {
-        separator: '',
+    var options = {
+        useEasing: false, 
+        useGrouping: false,
     };
- 
-*/
-    /* $(".counter").countup(2000 {
-         useEasing: false,
-         useGrouping: false
-    });  */
 
-    $(".counter").counterUp({ delay: 10, time: 1000 });
+    var c = new CountUp("counter", 0, 2000, 0, 0, options);
+    c.start(); 
+
+ */
+
+    jQuery(document).ready(function ($) {
+        $(".counter").counterUp({
+            delay: 35,
+            time: 4000
+        });
+    });
+
 
 });
+
 
 
 

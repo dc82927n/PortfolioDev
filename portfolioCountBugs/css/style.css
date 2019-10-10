@@ -1,0 +1,221 @@
+
+/* default style for the body */
+
+body {
+    font-size: 2rem; 
+    font-size: 14px; 
+    color: #333; 
+    background-color: #fff;
+    letter-spacing: 1px; 
+
+}
+
+
+
+/* putting an overlay of a darker color so the prev and next may pop if it's white but
+i keep the overlay white so it looks even brighter instead.*/
+.overlay{
+    width: 100%; 
+    height: 100%; 
+    position: absolute;
+    z-index: 3;  
+    background-color: rgba(0,0,0, 0.4)
+}
+
+/* . use ID tag and call both .prev and .next */
+.slides-navigation .prev, 
+.slides-navigation .next{
+    width: 47px;
+    height: 47px; 
+    background-size: cover; /* image will cover the whole size in this case 47px */
+    background-repeat: no-repeat;
+    
+}
+
+/* superslider navigation */
+.slides-navigation {
+     z-index: 6
+}
+
+
+/* a give the class a higher presedent*/
+.slides-navigation a.prev{
+    left: 20px;
+    background-image: url(../img/icons/prev2.png);
+    /* we are use .. because currently we are in the image folder and 
+we are telling the computer .. to go back one folder*/
+    
+}
+
+.slides-navigation a.next{
+    right: 20px; 
+    background-image: url(../img/icons/next2.png);
+    
+}
+
+
+.titleMessage {
+    position: absolute;
+    width: 100%;
+    height: 250px;
+    top: 50%;
+    text-align: center;
+    margin-top: -125px; 
+    z-index: 5
+}
+
+.titleMessage .heading p{
+    color: white; 
+    text-shadow: 5px 2px 5px rgba(0, 0, 0, 0.4);
+    font-weight: 100; /* thickness of the lettering */
+    letter-spacing: 7px
+}
+
+.titleMessage .heading .main {
+    font-size: 50px;
+    
+}
+
+
+.titleMessage .heading .sub {
+    font-size: 26px;
+    
+}
+
+/* about me section div*/
+.section {
+    padding: 100px 0;
+    /*  it's the same saying 100px 0 100px 0 basically 
+    it's saying 100px top and bottom and 0px left and right */
+}
+
+/*  about me image*/
+.aboutImage {
+    max-width: 100%;
+    /* height: 450px; */
+   /*  object-fit: cover;  */
+}
+
+/* myName div */
+.myName {
+    padding: 10px 0; 
+}
+
+
+/* here below is owl and pie chart css */
+.skillsSection {
+    background-color: white;
+    color: black
+}
+
+/* pie chart css */
+
+.skill{
+    text-align: center; 
+    margin-left: 10px;
+   
+
+}
+
+.chart .percent{
+  color: #000;
+  line-height: 152px;
+  display: inline-block;
+  font-size: 35px
+}
+
+/* adding % icon next to percent variable */
+.chart .percent:after{
+    content: '%'
+
+}
+
+.chart canvas{
+    position: absolute;
+    left: 0; 
+    top: 0; 
+
+}
+
+.chart {
+position: relative;
+width: 152px; 
+height: 152px; 
+display: inline-block; 
+text-align: center
+
+}
+/* here and above is pie chart and carousel css */
+
+
+/* css for stats section below*/
+.squareItem{
+   margin-top: 30px;
+   position: relative;
+}
+
+/* drawing the left,right,bottom fames for the stats */
+.squareInnerContainer {
+    position: relative;
+    padding: 50px 15px 35px;
+    text-align: center;
+    border: 2px solid black;
+    border-top: none; 
+}
+
+/* drawing the top portion of the line manually */
+.squareInnerContainer:before, 
+.squareInnerContainer:after{
+    content: '';
+    position: absolute; 
+    top: 0px; 
+    width: 30%; 
+    border-bottom: 2px solid black;
+}
+
+ 
+.squareInnerContainer:before{
+    right: 0px;
+
+}
+
+.squareInnerContainer:after{
+    left: 0px;
+}
+
+.squareContent h2{
+    font-size: 56px; 
+    margin-bottom: 10px;
+    font-weight: 400; 
+    color: black;
+}
+
+.squareContent h3{
+     font-size: 20px; 
+    margin-bottom: 10px;
+    font-weight: 59; 
+    color: black;
+}
+
+/* position the front awesome icon */
+.squareIcon {
+position: absolute;
+    left: 30%;
+    width: 40%;
+    height: 60px;
+    font-size: 65px;
+    top: -25%;
+}
+/* css for stats section above*/
+
+
+
+
+
+
+
+
+
+
+
+
