@@ -82,25 +82,58 @@ $(document).ready(function() {
 
     }); 
 
-    /* counterUp */   
-/*     $(".counter").countup(200);  */
-/* 
+   
+
+    /* counterUp hard coded of counter */   
+    /* $(".counter").countup(2000, options);  */
+
     var options = {
         useEasing: false, 
-        useGrouping: false,
+        usingGrouping: false,
+        separator: ""
     };
 
-    var c = new CountUp("counter", 0, 2000, 0, 0, options);
-    c.start(); 
+    var demo = new CountUp("counter", 0, 2000, 0, .25, options);
+    demo.start(); 
 
- */
 
-    jQuery(document).ready(function ($) {
-        $(".counter").counterUp({
-            delay: 35,
-            time: 4000
-        });
-    });
+    var options1 = {
+        useEasing: false,
+        usingGrouping: false,
+        separator: ""
+
+    }
+    var demo = new CountUp("counter1", 0, 3000,  0, 1, options1); 
+    demo.start(); 
+
+    var options2 = {
+        useEasing: false,
+        usingGrouping: false,
+        separator: ""
+
+    }
+    var demo = new CountUp("counter2", 0, 300000, 0, 1, options2);
+    demo.start(); 
+
+    var options3 = {
+        useEasing: false,
+        usingGrouping: false,
+        separator: ""
+
+    }
+    var demo = new CountUp("counter3", 0, 3000, 0, 1, options3);
+    demo.start(); 
+
+  /*   $(".counter").each(function() {
+        var element = $(this);
+        var endVal = parseInt(element.text()); 
+        element.countup(endVal); 
+      
+    }); 
+
+     */
+
+   
 
 
 });
