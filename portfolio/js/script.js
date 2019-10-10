@@ -60,9 +60,17 @@ $(document).ready(function() {
  /*    console.log(skillsTopOffset);  this will tell use where the skill section 
     is located from the top down. for this it's example it's 1594px down 
  */
+
+// window scroll so the feature won't function until it window it a certain height for the stats section
+
+    var statsTopOffset = $(".statsSection").offset().top;
+    var countUpFinished = false; 
+
+
+
     $(window).scroll(function(){
 
-        if(window.pageYOffset > skillsTopOffset - $(window).height() + 200) {
+        if(window.pageYOffset > skillsTopOffset - $(window).height()) {
 
             /* jQuery easyPieChart controls */
             $('.chart').easyPieChart({
@@ -80,59 +88,68 @@ $(document).ready(function() {
         
         }
 
+        if (!countUpFinished && window.pageYOffset > statsTopOffset - $(window).height() + 200) {
+
+            /* counterUp hard coded of counter */
+            /* $(".counter").countup(2000, options);  */
+
+            countUpFinished = true
+            
+            var options = {
+                useEasing: false,
+                usingGrouping: false,
+                separator: ""
+            };
+
+            var demo = new CountUp("counter", 0, 2000, 0, 2.5, options);
+            demo.start();
+
+
+            var options1 = {
+                useEasing: false,
+                usingGrouping: false,
+                separator: ""
+
+            }
+            var demo = new CountUp("counter1", 0, 3000, 0, 2.5, options1);
+            demo.start();
+
+            var options2 = {
+                useEasing: false,
+                usingGrouping: false,
+                separator: ""
+
+            }
+            var demo = new CountUp("counter2", 0, 300000, 0, 2.5, options2);
+            demo.start();
+
+            var options3 = {
+                useEasing: false,
+                usingGrouping: false,
+                separator: ""
+
+            }
+            var demo = new CountUp("counter3", 0, 3000, 0, 1, options3);
+            demo.start();
+
+            /*   $(".counter").each(function() {
+                    var element = $(this);
+                    var endVal = parseInt(element.text()); 
+                    element.countup(endVal); 
+                
+                }); 
+    
+                */
+               
+        }
+
     }); 
 
-   
-
-    /* counterUp hard coded of counter */   
-    /* $(".counter").countup(2000, options);  */
-
-    var options = {
-        useEasing: false, 
-        usingGrouping: false,
-        separator: ""
-    };
-
-    var demo = new CountUp("counter", 0, 2000, 0, .25, options);
-    demo.start(); 
 
 
-    var options1 = {
-        useEasing: false,
-        usingGrouping: false,
-        separator: ""
+       
 
-    }
-    var demo = new CountUp("counter1", 0, 3000,  0, 1, options1); 
-    demo.start(); 
-
-    var options2 = {
-        useEasing: false,
-        usingGrouping: false,
-        separator: ""
-
-    }
-    var demo = new CountUp("counter2", 0, 300000, 0, 1, options2);
-    demo.start(); 
-
-    var options3 = {
-        useEasing: false,
-        usingGrouping: false,
-        separator: ""
-
-    }
-    var demo = new CountUp("counter3", 0, 3000, 0, 1, options3);
-    demo.start(); 
-
-  /*   $(".counter").each(function() {
-        var element = $(this);
-        var endVal = parseInt(element.text()); 
-        element.countup(endVal); 
-      
-    }); 
-
-     */
-
+  
    
 
 
