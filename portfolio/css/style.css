@@ -212,10 +212,27 @@ position: absolute;
 
 
 
+/* css for the contact section */
+.contactSection {
+    background-color: white;
+    color: black
+}
 
+.contactButton {
+    color: black;
+    padding: 15px 20px; 
+    display: inline-block;
+    margin-top: 20px; 
+    border: 2px  solid black; 
+    border-radius: 2px; 
+}
 
+/* gave the text color and no text hightlight when  */
+.contactButton:hover {
+    text-decoration: none;
+    color:  pink; 
+    background-color: white;
 
-
-
+}
 
 
