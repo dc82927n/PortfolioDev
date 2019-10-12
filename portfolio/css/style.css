@@ -239,7 +239,7 @@ position: absolute;
 .filter a{
     color: silver; 
     border: 1px solid silver; 
-    padding: 10px 10px; 
+    padding: 10px 18px; 
     display: block; 
 
 }
@@ -271,7 +271,10 @@ position: absolute;
 
 
 
-
+.items .item {
+    width: 25%;
+    height: 25%;
+}
 
 
 

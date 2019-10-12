@@ -99,6 +99,7 @@
             </div>
         </div>
 
+        <!-- skill section -->
         <div id="skills" class="skillsSection section"> 
             <div class="container"> 
                 <div class="row"> 
@@ -226,6 +227,7 @@
             </div>
         </div>
 
+        <!-- contact me section -->
         <div id="contact" class="contactSection section"> 
 
             <div class="col-md-12 text-center"> 
@@ -249,23 +251,63 @@
                     
                             <div class="filter"> 
                                 <ul id="filter">
+                                    <!-- # mean it won't be link to anywhere -->
+                                    <!-- data-filter is communicating with the isotope plug-in -->
                                     <li> <a href="#" data-filter="*" class="current">ALL</a></li>
                                     <li><a href="#" data-filter=".app">Apps</a></li>
                                     <li><a href="#" data-filter=".me">Me</a></li>
                                 </ul> 
                             </div>   
+                                <!-- itemContainer -->
+                                <div class="itemsContainer">  
+                                    <ul class="items">
+                                    <!-- Bootstrap grid formats xs phone, sm tablest, md desktop, lg large desktops -->
+                                        <li class="apps col-xs-6 col-sm-4 col-md-3 col-lg-3">
+                                    
+                                            <div class="item">
+                                                <!-- need to crop as a square -->
+                                                <img src="img/port/thumnails/dog-square.jpeg">
+                                                <div class="icons">
+                                                    <a href="img/port/thumnails/dog-square.jpeg">
+                                                        <i class="fa fa-search"></i>
+                                                    </a>
+                                                    <a href="">
+                                                        <i class="fa fa-link"></i>
+                                                    </a>   
+                                                </div>
+                                            </div>
+
+
+                                            <div class="item">
+                                                <!-- need to crop as a square -->
+                                                <img src="img/port/thumnails/dog1.png">
+                                                <div class="icons">
+                                                    <a href="img/port/thumnails/dog1.png">
+                                                        <i class="fa fa-search"></i>
+                                                    </a>
+                                                    <a href="">
+                                                        <i class="fa fa-link"></i>
+                                                    </a>
+                                                </div>
+                                            </div>
+
+
+
+                                        </li>
+                                    </ul>
+                                </div>
+                    </div>
                 </div>
             </div>
-        </div>
 
   
-        <!-- Bootstrap grid formats xs phone, sm tablest, md desktop, lg large desktops -->
-        <div class="portfolio" class="section"> 
-            <ul class="container"> 
+        <!--  
+          <ul class="container"> 
+            
                 <li class="app col-xs-6 col-sm-4 col-md-3 col-lg-3"> 
                     
                     <div class="item">
-                        <!-- need to crop as a square -->  
+                      need to crop as a square 
                         <img src="img/port/thumnails/dog1.png"> 
                             </div class="icons">
                                 <a href=""> 
@@ -278,8 +320,8 @@
                     </div> 
                 </li>
             </ul>
-        </div>
-
+        </div>  
+-->
 
 
         <!-- added button test -->
@@ -319,7 +361,7 @@
             crossorigin="anonymous"></script>
 
             <!-- isotope plug-in that only helps with the filter-->
-        <script type="text/javascript" src="https://unpkg.com/isotope-layout@3.0.6/dist/isotope.pkgd.min.js"></script>
+        <script type="text/javascript" src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
 
              
 
