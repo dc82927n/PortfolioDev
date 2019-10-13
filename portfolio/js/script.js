@@ -186,15 +186,24 @@ $(document).ready(function() {
 
     function stickyNavigation() {
         var body = $("body"); 
+       
         if($(window).scrollTop() >= navTop) {
             /* saying once it pass scroll pass this point add navbar else 
             remove nav bar */
+            body.css("padding-top", nav.outerHeight() + "px") /* this how you add css 
+        into js and creates a smoother transition for the nav bar from 
+        one transition to another
+        */
             body.addClass ("fixedNav"); 
         } else {
+            /* to remove the padding */
+            body.css("padding-top", 0)
             body.removeClass("fixedNav"); 
         }
-
     }
+
+
+
 
 
 });

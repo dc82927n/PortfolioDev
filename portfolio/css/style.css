@@ -415,6 +415,7 @@ left inward to the imgs */
     background-color: #E8DCCA;
     padding: 20px 10px;
     z-index: 100; 
+    width: 100%; /* fixes the navbar not expanding to the end of the screen */
 }
 
 #navigation li {
@@ -438,9 +439,11 @@ left inward to the imgs */
 }
 
 
+/* css to create the navigation fix to work */
 .fixedNav #navigation {
     position: fixed;
-    top 0; 
+    top: 0; 
+    
 }
 
 
