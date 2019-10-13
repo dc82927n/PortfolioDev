@@ -320,6 +320,12 @@ background-color: none;
 position: relative; 
 /* display: inline-block;  */
 
+-webkit-transition: all 0.2s linear, 0.5s; 
+-moz-transition: all 0.2s linear, 0.5s; 
+-o-transition: all 0.2s linear, 0.5s; 
+-ms-transition: all 0.2s linear, 0.5s; 
+-transition: all 0.2s linear, 0.5s; 
+
 }
 
 .items .imageOverlay{
@@ -346,8 +352,27 @@ hover over the images it will be more smooth */
 }
 
 
+.items .openButton {
+    float: left; 
+    left: -200px;
+
+}
+
+.items .projectLink{
+    float: right; 
+    right: -200px;
+
+}
 
 
+
+.items .item:hover .openButton {
+    left: 0px; 
+}
+
+.items .item:hover .projectLink {
+    right: 0px; 
+}
 
 
 
