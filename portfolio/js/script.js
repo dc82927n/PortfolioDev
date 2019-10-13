@@ -177,6 +177,23 @@ $(document).ready(function() {
         return false; 
     }); 
 
+    /* this function help the navbar instead of teleport to the location it will scroll to the
+    location so it looks more smooth */
+        /* e stand for event  */
+    $("#navigation li a").click(function(e) {
+      /*   this is saying prevent the default setting 
+        so instead of tellporting to the location
+        it will now scroll to the location */
+        e.preventDefault();
+    
+        var targetElement = $(this).attr("href");
+        var targetPosition =$(targetElement).offset().top;
+        $("html, body").animate({ scrollTop: targetPosition -50}, "slow" )
+
+    });  
+
+
+
     /* creating a sticky event handler for the navbar*/
 
     const nav = $("#navigation"); 
