@@ -264,16 +264,33 @@ position: absolute;
 }
 
 .section .heading {
-    text-align:center;
+    text-align: center;
     padding-bottom: 40px; 
     width: 100%;
 }
 
+/* css for the filter imgs and this help get rid of the random dot  */
+.items li {
+    display: inline-block; 
+    padding: 5px; 
+    
+}
 
+.itemsContainer {
+    width: 100%;
+}
 
+/* control the size of the img  */
+.items li img {
+    width: 100%;
+    height: 100%; 
+}
 
-
-
+.items .item{
+    position: relative;
+    display: block; 
+    overflow: hidden; 
+}
 
 
 

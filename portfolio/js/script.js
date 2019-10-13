@@ -145,12 +145,18 @@ $(document).ready(function() {
 
     }); 
 
-
-
-       
-
+    /* fancybox call command */
+    $("[data-fancybox]").fancybox(); 
   
-   
+    /* isotope call comand */
+    $(".items").isotope({
+        filter:'*',
+        animationOptions:{
+            duration: 1500, /* speed for the filtering */
+            easing: 'linear',
+            queue: false
+        }
+    });
 
 
 });
