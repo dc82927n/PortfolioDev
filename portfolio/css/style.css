@@ -398,7 +398,6 @@ left inward to the imgs */
 }
 
 
-
 .copyrightSection {
     background-color: #000; 
     color: #fff;
@@ -411,8 +410,30 @@ left inward to the imgs */
 }
 
 
+/* Navbar  */
+#navigation {
+    background-color: #E8DCCA;
+    padding: 20px 10px;
+    z-index: 100; 
+}
 
+#navigation li {
+    padding: 0 10px; 
+}
 
+#navigation li a {
+    color: black
+}
 
+/* makes the brand nav stay black as well  */
+.navbar-brand, 
+.navbar-brand:hover{
+    color: black; 
+}
 
+/* add the burger icon on the navbar */
+.navbar-toggler-icon{
+    background: url(../img/icons/menu.png); 
+    background-size: 100%;    
+}
 
