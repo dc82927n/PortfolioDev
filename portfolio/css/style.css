@@ -446,6 +446,22 @@ left inward to the imgs */
     
 }
 
+/* screen loader css */
+.loader {
+    width: 100%; 
+    height: 100%; 
+    background-color:#fff;
+    position: fixed;
+    top: 0px;
+    left: 0px; 
+    z-index: 150;
+}
+
+.loader .inner {
+    width: 100%;
+    height: 100%;
+    background: url(../img/load/rocket.gif) center center no-repeat;
+}
 
 
 

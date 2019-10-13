@@ -1,5 +1,16 @@
 
 
+
+/* this will make the loader fade-out when it finish loading */
+$(window).on("load", function(){
+    $(".loader .inner").fadeOut(500, function(){
+        $(".loader").fadeOut(750);
+    });
+})
+
+
+
+
 /* saying when the document is ready do this and a webpage is a document. */
 $(document).ready(function() {
     $('#slides').superslides( {
