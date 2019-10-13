@@ -39,7 +39,6 @@
 
         <!-- super slider div with temp place holder-->
         <!-- id is targeting element slides -->
-
         <div id="slides">
         
 
@@ -68,6 +67,33 @@
 
         </div>
  
+
+        <!-- navbar section -->
+        <nav id="navigation" class="navbar navbar-expand-lg">
+            <a class="navbar-brand" href="#">Navbar</a>
+
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#stats">Stats <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Features</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Pricing</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
 
         <!-- about me section in this div using boostrap grid-->
         <div id="about" class="section"> 
@@ -102,64 +128,154 @@
             </div>
         </div>
 
-        <!-- skill section -->
-        <div id="skills" class="skillsSection section"> 
-            <div class="container"> 
-                <div class="row"> 
-                    <!-- text center is a pre-bootstrap class -->
-                    <div class="col-md-12 text-center">
-                        <h2> TECHINICAL SKILLS</h2> 
-                        <p> A representation of my proficiency in each skill</p>
+        <!-- portfolio section -->
+        <div id="portfolio" class="section">
+            <div class="container">
+                <div class="row">
+        
+                    <div class="heading">
+                        <h2> Portfolio </h4>
                     </div>
-
-                <!-- add a owl-carousel to list skills -->
-                    <div class="owl-carousel owl-theme">
-                            <div class="item">
-                                <div class="skill">
-                                    <span class="chart" data-percent="90">
-                                        <span class="percent">90</span>
-                                        <canvas height="152" width="152"></canvas>
-                                    </span>
-                                    <h4>JavaScript</h4>
-                                    <p>Used on most of my web projects</p>
+        
+                    <div class="filter">
+                        <ul id="filter">
+                            <!-- # mean it won't be link to anywhere -->
+                            <!-- data-filter is communicating with the isotope plug-in -->
+                            <li> <a href="#" data-filter="*" class="current">ALL</a></li>
+                            <li><a href="#" data-filter=".apps">Apps</a></li>
+                            <li><a href="#" data-filter=".me">Me</a></li>
+                        </ul>
+                    </div>
+                    <!-- itemContainer -->
+                    <div class="itemsContainer">
+                        <ul class="items">
+                            <!-- Bootstrap grid formats xs phone, sm tablest, md desktop, lg large desktops -->
+                            <!-- onclick fix the ios bug the info and link doesn't appear-->
+                            <li onclick="" class="apps col-xs-6 col-sm-4 col-md-3 col-lg-3">
+        
+                                <div class="item">
+                                    <!-- need to crop as a square -->
+                                    <img src="img/port/thumnails/dog-square.jpeg">
+        
+                                    <div class="icons">
+                                        <!-- title creates when hover over can be viewable  -->
+                                        <a href="img/port/thumnails/dog1.png" title="View image" class="openButton"
+                                            data-fancybox data-caption="this is a dog">
+                                            <!-- data-fancybox data=caption add a caption to the image -->
+                                            <i class="fa fa-info"></i>
+                                        </a>
+                                        <!-- _blank creates a new tab -->
+                                        <a href="http://google.com" target="_blank" class="projectLink">
+                                            <i class="fa fa-link"></i>
+                                        </a>
+                                    </div>
+        
+                                    <div class="imageOverlay"></div>
+        
                                 </div>
-                            </div>
-                            <div class="item">
-                                <div class="skill">
-                                    <span class="chart" data-percent="80">
-                                        <span class="percent">80</span>
-                                        <canvas height="152" width="152"></canvas>
-                                    </span>
-                                    <h4>HTML</h4>
-                                    <p>Used on most of my web projects</p>
+                            </li>
+        
+                            <li onclick="" class="me col-xs-6 col-sm-4 col-md-3 col-lg-3">
+        
+                                <div class="item">
+                                    <!-- need to crop as a square -->
+                                    <img src="img/port/thumnails/dog-square.jpeg">
+        
+                                    <div class="icons">
+                                        <!-- title creates when hover over can be viewable  -->
+                                        <a href="img/port/thumnails/dog1.png" title="View image" class="openButton"
+                                            data-fancybox data-caption="this is a dog">
+                                            <!-- data-fancybox data=caption add a caption to the image -->
+                                            <i class="fa fa-search"></i>
+                                        </a>
+                                        <a href="" target="_blank" class="projectLink">
+                                            <i class="fa fa-link"></i>
+                                        </a>
+                                    </div>
+        
+                                    <div class="imageOverlay"></div>
+        
                                 </div>
-                            </div>
-                            <div class="item">
-                                <div class="skill">
-                                    <span class="chart" data-percent="70">
-                                        <span class="percent">70 </span> 
-                                        <canvas height="40" width="152"></canvas>
-                                    </span>
-                                    <h4>CSS</h4>
-                                    <p>Used on most of my web projects</p>
+                            </li>
+        
+                            <li onclick="" class="apps col-xs-6 col-sm-4 col-md-3 col-lg-3">
+        
+                                <div class="item">
+                                    <!-- need to crop as a square -->
+                                    <img src="img/port/thumnails/dog-square.jpeg">
+        
+                                    <div class="icons">
+                                        <!-- title creates when hover over can be viewable  -->
+                                        <a href="img/port/thumnails/dog1.png" title="View image" class="openButton"
+                                            data-fancybox data-caption="this is a dog">
+                                            <!-- data-fancybox data=caption add a caption to the image -->
+                                            <i class="fa fa-search"></i>
+                                        </a>
+                                        <a href="" target="_blank" class="projectLink">
+                                            <i class="fa fa-link"></i>
+                                        </a>
+                                    </div>
+        
+                                    <div class="imageOverlay"></div>
+        
                                 </div>
-                            </div>
-                            <div class="item">
-                                <div class="skill">
-                                    <span class="chart" data-percent="70">
-                                        <span class="percent">75%</span>
-                                        <canvas height="152" width="152"></canvas>
-                                    </span>
-                                    <h4>JQuery</h4>
-                                    <p>Used on most of my web projects</p>
+                            </li>
+        
+                            <li onclick="" class="apps col-xs-6 col-sm-4 col-md-3 col-lg-3">
+        
+                                <div class="item">
+                                    <!-- need to crop as a square -->
+                                    <img src="img/port/thumnails/dog-square.jpeg">
+        
+                                    <div class="icons">
+                                        <!-- title creates when hover over can be viewable  -->
+                                        <a href="img/port/thumnails/dog1.png" title="View image" class="openButton"
+                                            data-fancybox data-caption="this is a dog">
+                                            <!-- data-fancybox data=caption add a caption to the image -->
+                                            <i class="fa fa-search"></i>
+                                        </a>
+                                        <a href="" target="_blank" class="projectLink">
+                                            <i class="fa fa-link"></i>
+                                        </a>
+                                    </div>
+        
+                                    <div class="imageOverlay"></div>
+        
                                 </div>
-                            </div>
-
+                            </li>
+                            <li onclick="" class="apps col-xs-6 col-sm-4 col-md-3 col-lg-3">
+        
+                                <div class="item">
+                                    <!-- need to crop as a square -->
+                                    <img src="img/port/thumnails/dog-square.jpeg">
+        
+                                    <div class="icons">
+                                        <!-- title creates when hover over can be viewable  -->
+                                        <a href="img/port/thumnails/dog1.png" title="View image" class="openButton"
+                                            data-fancybox data-caption="this is a dog">
+                                            <!-- data-fancybox data=caption add a caption to the image -->
+                                            <i class="fa fa-search"></i>
+                                        </a>
+                                        <a href="" target="_blank" class="projectLink">
+                                            <i class="fa fa-link"></i>
+                                        </a>
+                                    </div>
+        
+                                    <div class="imageOverlay"></div>
+        
+                                </div>
+                            </li>
+        
+        
+                        </ul>
                     </div>
                 </div>
             </div>
         </div>
 
+
+
+      
 
         <!-- stats section -->
         <div id="stats" class="statsSection section"> 
@@ -231,150 +347,64 @@
         </div>
 
         
-    <!-- portfolio section -->
-        <div id="portfolio" class="section">
-            <div class="container">
-                <div class="row">
-                  
-                        <div class="heading"> 
-                            <h2> Portfolio </h4>
-                        </div>
-                    
-                            <div class="filter"> 
-                                <ul id="filter">
-                                    <!-- # mean it won't be link to anywhere -->
-                                    <!-- data-filter is communicating with the isotope plug-in -->
-                                    <li> <a href="#" data-filter="*" class="current">ALL</a></li>
-                                    <li><a href="#" data-filter=".apps">Apps</a></li>
-                                    <li><a href="#" data-filter=".me">Me</a></li>
-                                </ul> 
-                            </div>   
-                                <!-- itemContainer -->
-                                <div class="itemsContainer">  
-                                    <ul class="items">
-                                    <!-- Bootstrap grid formats xs phone, sm tablest, md desktop, lg large desktops -->
-                                        <!-- onclick fix the ios bug the info and link doesn't appear-->
-                                        <li onclick="" class="apps col-xs-6 col-sm-4 col-md-3 col-lg-3">
-                                    
-                                            <div class="item">
-                                                <!-- need to crop as a square -->
-                                                <img src="img/port/thumnails/dog-square.jpeg">
-                                                
-                                                    <div class="icons"> 
-                                                        <!-- title creates when hover over can be viewable  -->
-                                                        <a href="img/port/thumnails/dog1.png" title="View image" 
-                                                        class="openButton" data-fancybox data-caption="this is a dog" >
-                                                        <!-- data-fancybox data=caption add a caption to the image -->
-                                                            <i class="fa fa-info"></i>
-                                                        </a> 
-                                                        <!-- _blank creates a new tab -->
-                                                        <a href="http://google.com" target="_blank" class="projectLink">
-                                                            <i class="fa fa-link"></i>
-                                                        </a>   
-                                                    </div>
+      <!-- skill section -->
+        <div id="skills" class="skillsSection section"> 
+            <div class="container"> 
+                <div class="row"> 
+                    <!-- text center is a pre-bootstrap class -->
+                    <div class="col-md-12 text-center">
+                        <h2> TECHINICAL SKILLS</h2> 
+                        <p> A representation of my proficiency in each skill</p>
+                    </div>
 
-                                                <div class="imageOverlay"></div>
-
-                                            </div>
-                                        </li>
-
-                                        <li onclick="" class="me col-xs-6 col-sm-4 col-md-3 col-lg-3">
-                                        
-                                            <div class="item">
-                                                <!-- need to crop as a square -->
-                                                <img src="img/port/thumnails/dog-square.jpeg">
-                                        
-                                                    <div class="icons">
-                                                        <!-- title creates when hover over can be viewable  -->
-                                                        <a href="img/port/thumnails/dog1.png" title="View image" class="openButton" data-fancybox
-                                                            data-caption="this is a dog">
-                                                            <!-- data-fancybox data=caption add a caption to the image -->
-                                                            <i class="fa fa-search"></i>
-                                                        </a>
-                                                        <a href="" target="_blank" class="projectLink">
-                                                            <i class="fa fa-link"></i>
-                                                        </a>
-                                                    </div>
-
-                                                <div class="imageOverlay"></div>
-
-                                            </div>
-                                        </li>
-                                        
-                                        <li onclick="" class="apps col-xs-6 col-sm-4 col-md-3 col-lg-3">
-                                        
-                                            <div class="item">
-                                                <!-- need to crop as a square -->
-                                                <img src="img/port/thumnails/dog-square.jpeg">
-                                        
-                                                    <div class="icons">
-                                                            <!-- title creates when hover over can be viewable  -->
-                                                            <a href="img/port/thumnails/dog1.png" title="View image" class="openButton" data-fancybox
-                                                                data-caption="this is a dog">
-                                                                <!-- data-fancybox data=caption add a caption to the image -->
-                                                                <i class="fa fa-search"></i>
-                                                            </a>
-                                                            <a href="" target="_blank" class="projectLink">
-                                                                <i class="fa fa-link"></i>
-                                                            </a>
-                                                        </div>
-
-                                                    <div class="imageOverlay"></div>
-
-                                            </div>
-                                        </li> 
-
-                                            <li onclick="" class="apps col-xs-6 col-sm-4 col-md-3 col-lg-3">
-                                            
-                                                <div class="item">
-                                                    <!-- need to crop as a square -->
-                                                    <img src="img/port/thumnails/dog-square.jpeg">
-                                                
-                                                        <div class="icons">
-                                                            <!-- title creates when hover over can be viewable  -->
-                                                            <a href="img/port/thumnails/dog1.png" title="View image" class="openButton" data-fancybox
-                                                                data-caption="this is a dog">
-                                                                <!-- data-fancybox data=caption add a caption to the image -->
-                                                                <i class="fa fa-search"></i>
-                                                            </a>
-                                                            <a href="" target="_blank" class="projectLink">
-                                                                <i class="fa fa-link"></i>
-                                                            </a>
-                                                        </div>
-
-                                                    <div class="imageOverlay"></div>
-
-                                                </div>
-                                        </li>
-                                            <li onclick="" class="apps col-xs-6 col-sm-4 col-md-3 col-lg-3">
-                                            
-                                                <div class="item">
-                                                    <!-- need to crop as a square -->
-                                                    <img src="img/port/thumnails/dog-square.jpeg">
-                                            
-                                                    <div class="icons">
-                                                        <!-- title creates when hover over can be viewable  -->
-                                                        <a href="img/port/thumnails/dog1.png" title="View image" class="openButton" data-fancybox
-                                                            data-caption="this is a dog">
-                                                            <!-- data-fancybox data=caption add a caption to the image -->
-                                                            <i class="fa fa-search"></i>
-                                                        </a>
-                                                        <a href="" target="_blank" class="projectLink">
-                                                            <i class="fa fa-link"></i>
-                                                        </a>
-                                                    </div>
-                                            
-                                                    <div class="imageOverlay"></div>
-                                            
-                                                </div>
-                                            </li>
-
-
-                                    </ul>
+                <!-- add a owl-carousel to list skills -->
+                    <div class="owl-carousel owl-theme">
+                            <div class="item">
+                                <div class="skill">
+                                    <span class="chart" data-percent="90">
+                                        <span class="percent">90</span>
+                                        <canvas height="152" width="152"></canvas>
+                                    </span>
+                                    <h4>JavaScript</h4>
+                                    <p>Used on most of my web projects</p>
                                 </div>
+                            </div>
+                            <div class="item">
+                                <div class="skill">
+                                    <span class="chart" data-percent="80">
+                                        <span class="percent">80</span>
+                                        <canvas height="152" width="152"></canvas>
+                                    </span>
+                                    <h4>HTML</h4>
+                                    <p>Used on most of my web projects</p>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="skill">
+                                    <span class="chart" data-percent="70">
+                                        <span class="percent">70 </span> 
+                                        <canvas height="40" width="152"></canvas>
+                                    </span>
+                                    <h4>CSS</h4>
+                                    <p>Used on most of my web projects</p>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="skill">
+                                    <span class="chart" data-percent="70">
+                                        <span class="percent">75%</span>
+                                        <canvas height="152" width="152"></canvas>
+                                    </span>
+                                    <h4>JQuery</h4>
+                                    <p>Used on most of my web projects</p>
+                                </div>
+                            </div>
+
                     </div>
                 </div>
             </div>
+        </div>
+
 
 
         <!-- contact me section -->
@@ -398,7 +428,7 @@
             </div>
     </div>
 
-        
+
        
        
        
