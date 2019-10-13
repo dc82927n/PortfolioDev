@@ -6,6 +6,17 @@ $(window).on("load", function(){
     $(".loader .inner").fadeOut(500, function(){
         $(".loader").fadeOut(750);
     });
+
+    /* isotope call comand */
+    $(".items").isotope({
+        filter: '*',
+        animationOptions: {
+            duration: 1500, /* speed for the filtering */
+            easing: 'linear',
+            queue: false
+        }
+    });
+
 })
 
 
@@ -159,15 +170,7 @@ $(document).ready(function() {
     /* fancybox call command */
     $("[data-fancybox]").fancybox(); 
   
-    /* isotope call comand */
-    $(".items").isotope({
-        filter:'*',
-        animationOptions:{
-            duration: 1500, /* speed for the filtering */
-            easing: 'linear',
-            queue: false
-        }
-    });
+  
 
     /* selectioning the id filter tag to use the filter tag */
     $("#filter a").click(function() {
