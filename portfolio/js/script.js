@@ -158,6 +158,27 @@ $(document).ready(function() {
         }
     });
 
+    /* selectioning the id filter tag to use the filter tag */
+    $("#filter a").click(function() {
+
+        $("#filters .current").removeClass("current"); 
+        $(this).addClass("current");
+
+        var selector = $(this).attr("data-filter"); 
+
+        $(".items").isotope({
+            filter: selector, /* selecting the click handler */
+            animationOptions: {
+                duration: 1500, /* speed for the filtering */
+                easing: 'linear',
+                queue: false
+            }
+        });
+
+        return false; 
+
+    }); 
+
 
 });
 
