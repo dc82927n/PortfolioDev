@@ -437,3 +437,21 @@ left inward to the imgs */
     background-size: 100%;    
 }
 
+
+.fixedNav #navigation {
+    position: fixed;
+    top 0; 
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

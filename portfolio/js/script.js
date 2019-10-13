@@ -177,6 +177,25 @@ $(document).ready(function() {
         return false; 
     }); 
 
+    /* creating a sticky event handler for the navbar*/
+
+    const nav = $("#navigation"); 
+    const navTop = nav.offset().top; 
+
+    $(window).on("scroll", stickyNavigation); 
+
+    function stickyNavigation() {
+        var body = $("body"); 
+        if($(window).scrollTop() >= navTop) {
+            /* saying once it pass scroll pass this point add navbar else 
+            remove nav bar */
+            body.addClass ("fixedNav"); 
+        } else {
+            body.removeClass("fixedNav"); 
+        }
+
+    }
+
 
 });
 
