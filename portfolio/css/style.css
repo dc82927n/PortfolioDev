@@ -292,12 +292,58 @@ position: absolute;
     overflow: hidden; 
 }
 
+/* css positioning for search and icon on porfolio img */
+.items .icons{
+    position: absolute; 
+    width: 90px;
+    height: 40px;
+    left: 50%;
+    top: 50%;
+    margin: -20px auto 0 -47px;
+    text-align: center; 
+    z-index: 3; 
 
+}
 
+/* css for my positioning */
+.items .icons i{
+    color: #fff; 
+    font-size: 20px; 
+    margin-top: 9px; 
+    
+}
 
+.items a {
+width: 40px;
+height: 40px; 
+background-color: none; 
+position: relative; 
+/* display: inline-block;  */
 
+}
 
+.items .imageOverlay{
+width: 100%;
+height: 100%;
+background-color: rgba(0, 0, 0, 0.5);
+position: absolute;
+left: 0px;
+top: 0px; 
+opacity: 0; 
 
+/* transition code for difference browsers so when you 
+hover over the images it will be more smooth */
+-webkit-transition: all 0.2s linear, 1s; 
+-moz-transition: all 0.2s linear, 1s; 
+-o-transition: all 0.2s linear, 1s; 
+-ms-transition: all 0.2s linear, 1s; 
+-transition: all 0.2s linear, 1s; 
+}
+
+/* when you hover over the images you will see an overlay */
+.items .item:hover .imageOverlay {
+    opacity:1; 
+}
 
 
 
