@@ -3,8 +3,8 @@
 
 /* this will make the loader fade-out when it finish loading */
 $(window).on("load", function(){
-    $(".loader .inner").fadeOut(500, function(){
-        $(".loader").fadeOut(750);
+    $(".loader .inner").fadeOut(250, function(){
+        $(".loader").fadeOut(350);
     });
 
     /* isotope call comand */
@@ -70,7 +70,7 @@ $(document).ready(function() {
 
     });
     $('.play').on('click', function () {
-        owl.trigger('play.owl.autoplay', [1000])
+        owl.trigger('play.owl.autoplay', [100000])
     })
     $('.stop').on('click', function () {
         owl.trigger('stop.owl.autoplay')
